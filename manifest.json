@@ -1,0 +1,14 @@
+{
+  "name": "YouTube Effects Modifier",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "description": "Toggle preview and toolbar on YouTube Effects editor",
+  "permissions": ["scripting"],
+  "content_scripts": [
+    {
+      "matches": ["https://effects.youtube.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
